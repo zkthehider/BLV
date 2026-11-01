@@ -1,0 +1,11 @@
+Target JSONL	What Goes Inside	Best Generation Method
+
+security_policies.jsonl	Invariants, access control rules, API specifications, RFC standards.	Automated Chunker (from OWASP, RFCs, Swagger/OpenAPI docs).
+
+vulnerabilities.jsonl	Weakness definitions, CWE-840, CWE-288, logic flaw categorizations.	Automated (MITRE CWE API, OWASP).
+
+attack_scenarios.jsonl	Step-by-step state transitions showing how an attacker bypassed logic.	LLM Curated (feeding raw HackerOne / PortSwigger write-ups into an LLM).
+
+evidence_patterns.jsonl	Test oracles: differential responses, invariant violations, log clues.	LLM Curated / Manual (capturing what proved the exploit succeeded).
+
+testing_methods.jsonl	Fuzzing strategies, state-graph navigation tactics, race-condition timing.	Curated / Automated (Academic papers, PortSwigger cheat sheets).

@@ -1,1 +1,10 @@
+# Bytecode and runtime caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local vector database
+chroma_db/
+
+# Virtual environment
 .venv/
